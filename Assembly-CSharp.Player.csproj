@@ -59,8 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
-    <Compile Include="Assets\Scripts\DeleteEnemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyCleaner.cs" />
+    <Compile Include="Assets\Scripts\SpawnerEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

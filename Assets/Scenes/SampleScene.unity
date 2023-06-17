@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 276794218}
-  - component: {fileID: 276794217}
+  - component: {fileID: 276794219}
   m_Layer: 0
   m_Name: SpawnZoneEnemy
   m_TagString: Untagged
@@ -211,22 +211,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &276794217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276794216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df3e76f355b2a464995aa70c7c5f422a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemy: {fileID: 218105262410744120, guid: 67c8d88804c05d340821fd26f3efe52d, type: 3}
-  _spawnZone: {fileID: 276794218}
-  _reload: 2
-  _countEnemy: 10
 --- !u!4 &276794218
 Transform:
   m_ObjectHideFlags: 0
@@ -253,6 +237,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &276794219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276794216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3e76f355b2a464995aa70c7c5f422a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: -6364317174096832088, guid: 67c8d88804c05d340821fd26f3efe52d, type: 3}
+  _spawnZone: {fileID: 276794218}
+  _reload: 0.1
+  _countEnemy: 1000
 --- !u!1001 &464830069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 526092038163882987, guid: 7dfaef7763b69ee41926a99a655f8939, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.18
+      value: -5.15
       objectReference: {fileID: 0}
     - target: {fileID: 526092038163882987, guid: 7dfaef7763b69ee41926a99a655f8939, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1147,7 +1147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080348683}
-  - component: {fileID: 2080348682}
+  - component: {fileID: 2080348684}
   m_Layer: 0
   m_Name: DeleteZoneEnemy
   m_TagString: Untagged
@@ -1155,18 +1155,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2080348682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080348681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c389011f85602594cadeaa90d3916949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2080348683
 Transform:
   m_ObjectHideFlags: 0
@@ -1183,3 +1171,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080348684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080348681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c389011f85602594cadeaa90d3916949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
