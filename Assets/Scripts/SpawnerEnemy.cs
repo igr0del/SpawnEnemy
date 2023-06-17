@@ -11,7 +11,7 @@ public class SpawnerEnemy : MonoBehaviour
 
     private Transform[] _spawnPoints;
 
-    private int _countSpawn = 0;
+    private int _currentSpawn = 0;
 
     private void Start()
     {
@@ -29,13 +29,13 @@ public class SpawnerEnemy : MonoBehaviour
     {
         var waitForSeconds = new WaitForSeconds(_reload);
 
-        while (_countSpawn <= _countEnemy)
+        while (_currentSpawn <= _countEnemy)
         {
             int chooseSpawnPoint = Random.RandomRange(0, _spawnPoints.Length);
 
             Instantiate(_enemy, _spawnPoints[chooseSpawnPoint].position, Quaternion.identity);
             
-            _countSpawn++;
+            _currentSpawn++;
 
             yield return waitForSeconds;
         }
